@@ -1,0 +1,26 @@
+[
+   {
+      "number": 1,
+      "title": "Tiaki",
+      "subheading": "Home security IoT app",
+      "description": "Tiaki is a home IoT security app that lets the user have control over household security devices. This project is only a mockup / prototype coded with HTML, CSS, and Javascript.",
+      "link": "asdasdasd",
+      "img": "iphone-ui-mockup-1.png"
+   },
+   {
+      "number": 2,
+      "title": "Corrupt Coffee",
+      "subheading": "Static website",
+      "description": "This project is a static website for a coffee supplier's online store. The website's purpose is to show the client's products and services as well as their business information and contact. HTML, CSS, and Javascript are used to create this project.",
+      "link": "asdasdasd",
+      "img": "corrupt-coffee-macbook-mockup-1.png"
+   },
+   {
+      "number": 3,
+      "title": "Title 3",
+      "subheading": "Subheading here",
+      "description": "Description here",
+      "link": "asdasdasd",
+      "img": "code-snapshot.png"
+   }
+]

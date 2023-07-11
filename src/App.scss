@@ -1,0 +1,73 @@
+$primary-color: rgb(20, 131, 221);
+$primary-color-v2: mix($primary-color, white, 50%);
+$primary-color-v3: mix($primary-color, rgb(77, 77, 77), 20%);
+
+$background-color-light: #e2e2e2;
+$background-color-dark: #343434;
+
+$gradient-color-1: rgb(17, 55, 112);
+$gradient-color-2: rgb(128, 59, 122);
+
+$section-padding-inline: 100px;
+
+$breakpoint-1: 930px;
+
+// $gradient-color-1: #704987;
+// $gradient-color-2: #de4097;
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: $background-color-light;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.2em;
+   line-height: 1.5em;
+
+   &::-webkit-scrollbar {
+      display: none;
+   }
+}
+
+// .button-3D {
+//    background-color: rgb(128, 128, 128);
+//    border: none;
+//    height: 20px;
+//    position: relative;
+//    border-radius: 10px;
+//    height: 30px;
+//    width: auto;
+//    padding: 20px;
+//    display: grid;
+//    place-content: center;
+//    filter: drop-shadow(-5px -5px 10px white) drop-shadow(5px 5px 10px black);
+
+//    & > * {
+//       width: 100%;
+//       height: 100%;
+//    }
+
+//    span {
+//       font-size: 1rem;
+//       color: black;
+//    }
+
+//    .box {
+//       background-color: $background-color-light;
+//       border-radius: 10px;
+//       position: absolute;
+//       z-index: -1;
+//    }
+// }
+.button-3D {
+   color: $primary-color;
+   padding: 10px 20px;
+   border-radius: 8px;
+   border: 1px solid $primary-color;
+   background: transparent;
+   font-size: 1rem;
+}

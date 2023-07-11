@@ -1,0 +1,11 @@
+@import "../App.scss";
+
+.footer {
+   height: 80px;
+   width: 100%;
+   background-color: $background-color-dark;
+   display: grid;
+   place-content: center;
+   font-size: 0.8rem;
+   color: grey;
+}

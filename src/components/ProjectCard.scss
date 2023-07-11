@@ -1,0 +1,87 @@
+@import "../App.scss";
+
+.project-card {
+   width: 100%;
+   height: 100%;
+   max-width: 1000px;
+   margin-inline: auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "image info";
+   column-gap: 100px;
+   row-gap: 20px;
+   color: rgb(71, 71, 71);
+   padding-block: 150px;
+
+   @media screen and (width < $breakpoint-1) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1fr 1fr);
+      grid-template-areas: "image" "info";
+   }
+
+   &:nth-of-type(even) {
+      grid-template-areas: "info image";
+
+      @media screen and (width < $breakpoint-1) {
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(1fr 1fr);
+         grid-template-areas: "image" "info";
+      }
+   }
+
+   .image-panel {
+      grid-area: image;
+      display: grid;
+      place-items: center;
+      position: relative;
+      height: auto;
+
+      img {
+         width: 100%;
+         max-width: 500px;
+      }
+
+      .bg-number {
+         font-size: min(15em, 50vw);
+         font-weight: 600;
+         line-height: 1em;
+         z-index: -1;
+         color: rgb(197, 197, 197);
+         position: absolute;
+         left: 0;
+         transform: translateY(-80%);
+      }
+   }
+
+   .info-panel {
+      grid-area: info;
+      display: grid;
+      gap: 40px;
+      grid-template-rows: auto auto auto;
+
+      header {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         h2 {
+         }
+         h3 {
+            font-weight: 500;
+         }
+      }
+      main {
+         height: auto;
+         min-height: 200px;
+      }
+      footer {
+         display: flex;
+         gap: 20px;
+      }
+   }
+
+   .panel {
+      min-height: 300px;
+      height: auto;
+      width: 100%;
+   }
+}
